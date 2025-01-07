@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "FindMyBook",
+    "version": "0.0.1",
+    "description": "Filter search, to find pdf version of books.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {},
+    "background": {
+        "service_worker": "./scripts/service-worker.js"
+      }
+  }
