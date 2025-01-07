@@ -3,20 +3,9 @@
     "name": "FindMyBook",
     "version": "0.0.1",
     "description": "Filter search, to find pdf version of books.",
-    "action": {
-        "default_popup": "index.html"
-      },
+    "permissions": ["activeTab", "scripting"],
+    "action": {},
     "background": {
-        "service_worker": "./scripts/service-worker.js",
-        "type": "module"
-      },
-    "permissions": ["activeTab"],
-    "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+F",
-        "mac": "Command+F"
+        "service_worker": "./scripts/service-worker.js"
       }
-    }
-  }
   }

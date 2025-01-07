@@ -1,4 +1,6 @@
-import './book-scraping.js'
-import './sw-omnibox.js'
-
-console.log('here')
+chrome.action.onClicked.addListener((tab) => {
+    chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      files: ["/scripts/book-scraping.js"]
+    });
+  });
