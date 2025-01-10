@@ -4,8 +4,11 @@
     "version": "0.0.1",
     "description": "Filter search, to find pdf version of books.",
     "permissions": ["activeTab", "scripting"],
-    "action": {},
-    "background": {
-        "service_worker": "./scripts/service-worker.js"
-      }
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_title": "FindMyBook",
+        "default_popup": "index.html"
+    }
   }
