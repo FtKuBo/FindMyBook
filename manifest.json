@@ -3,7 +3,7 @@
     "name": "FindMyBook",
     "version": "0.0.1",
     "description": "Filter search, to find pdf version of books.",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["activeTab", "scripting", "tabs"],
     "host_permissions": [
         "<all_urls>"
     ],
