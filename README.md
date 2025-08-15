@@ -2,6 +2,12 @@
 
 **A Brave browser extension that helps you find PDF versions of books using Google Search**
 
+
+
+https://github.com/user-attachments/assets/eda20c92-cb25-471f-8258-2010c6e03272
+
+
+
 ## 🎯 What does it do?
 
 FindMyBook is a browser extension designed to help you quickly find PDF versions of books. When you're on a page (like a book listing, author page, or search results), simply click the extension button and it will search Google for PDF versions of relevant books, presenting you with a clean list of downloadable PDFs.
@@ -46,20 +52,6 @@ If Google shows a captcha during the search:
 - **Content Scripts** for dynamic page interaction
 - **Hidden Tab Processing** for non-intrusive searching
 
-### Key Components
-
-- **`manifest.json`**: Extension configuration and permissions
-- **`index.html`**: Popup interface with modern styling
-- **`scripts/popup.js`**: Frontend logic for user interaction
-- **`scripts/background.js`**: Background service worker handling search logic
-
-### Permissions Required
-
-- **`activeTab`**: Access to the current active tab
-- **`scripting`**: Execute scripts in web pages for link extraction
-- **`tabs`**: Create and manage hidden tabs for searching
-- **`<all_urls>`**: Access Google search pages for PDF extraction
-
 ## 🏗️ Installation
 
 ### For Users
@@ -96,21 +88,6 @@ findMyBook/
 └── README.md           # This file
 ```
 
-### Key Functions
-
-**Background Script (`background.js`):**
-- `startPdfSearch()`: Initiates the PDF search process
-- `performSearch()`: Iterates through Google search result pages
-- `checkForCaptcha()`: Detects captcha challenges
-- `extractLinksFromTab()`: Extracts PDF links from search results
-- `checkIfPageEmpty()`: Determines when search results are exhausted
-
-**Popup Script (`popup.js`):**
-- `showLoading()`: Displays search progress
-- `showResults()`: Displays found PDF links
-- `showCaptchaMessage()`: Shows captcha resolution instructions
-- `updateProgress()`: Updates real-time search progress
-
 ### Search Algorithm
 
 1. Takes current page URL and appends Google search parameters
@@ -127,56 +104,3 @@ findMyBook/
 - **Google Search Dependency**: Relies on Google search results and structure
 - **Captcha Interruptions**: Google's anti-bot measures may require manual intervention
 - **Rate Limiting**: Searches are throttled to avoid triggering anti-bot measures
-
-## 🔒 Privacy & Security
-
-- **No Data Collection**: The extension doesn't collect or store personal data
-- **Local Processing**: All searches happen locally in your browser
-- **Temporary Storage**: Search results are only stored temporarily during the session
-- **HTTPS Only**: Only secure PDF links are returned
-
-## 🐛 Troubleshooting
-
-### Extension Won't Start
-- Ensure you're using Brave browser
-- Check that developer mode is enabled
-- Verify all extension files are present
-
-### No PDFs Found
-- Try searching from a more specific page (book title, author)
-- The page content may not contain book-related terms
-- Google may not have indexed relevant PDFs
-
-### Frequent Captchas
-- This is Google's anti-bot protection
-- Try waiting longer between searches
-- Clear your browser data and restart Brave
-
-### Search Gets Stuck
-- Close and reopen the extension popup
-- Check if the hidden search tab is still active
-- Restart the browser if issues persist
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly with various websites
-5. Submit a pull request
-
-## 📄 License
-
-This project is open source. Please ensure you comply with Google's Terms of Service and respect copyright laws when using this extension.
-
-## 🔄 Version History
-
-- **v0.0.1**: Initial release with basic PDF search functionality
-
-## ⚖️ Legal Notice
-
-This extension is for educational and research purposes. Users are responsible for ensuring their use complies with applicable copyright laws and website terms of service. The developers are not responsible for any misuse of this tool.
-
----
-
-**Made with ❤️ for book lovers and researchers**
