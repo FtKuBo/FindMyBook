@@ -1,12 +1,11 @@
 # 📚 FindMyBook
 
 **A Brave browser extension that helps you find PDF versions of books using Google Search**
+### 👉 [Try it Live](https://chromewebstore.google.com/detail/kbboembamaojonoienbijlalbnejdiao?utm_source=item-share-cb) 🚀
 
 ## 🎥 Video Demo
 
 https://github.com/user-attachments/assets/eda20c92-cb25-471f-8258-2010c6e03272
-
-
 
 ## 🎯 What does it do?
 
